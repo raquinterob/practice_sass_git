@@ -1,0 +1,31 @@
+@import './_variables'
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 15px
+    box-shadow: 0 0 8px grey
+    &__logo
+        font-size: 36px
+        transition: all .6s ease-in-out
+        padding: 5px
+        color: white
+        &:hover
+            background: #666
+            box-shadow: 0 0 4px #333
+
+.menu
+    &__container
+        display: flex
+        justify-content: center
+        align-items: center
+    &__item
+        padding: 10px 15px
+        margin: 0
+        border-right: 1px solid #c8c8c8
+        &:last-child
+            border: none
+        &:hover
+            background: darken($main-color, 10%)
+    &__link
+        color: white
